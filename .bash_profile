@@ -7,6 +7,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # z Settings
 . /usr/local/etc/profile.d/z.sh
 
+# Golang
+export GOPATH=$HOME/Developer/go
+
 # React Native Android
 export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
