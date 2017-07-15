@@ -16,6 +16,7 @@ export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
 # Git Aliases
+alias gp='git push'
 alias gst='git status -sb'
 alias gb='git branch'
 alias gc='git commit -a'
