@@ -15,6 +15,9 @@ export ANDROID_HOME=${HOME}/Library/Android/sdk
 export PATH=${PATH}:${ANDROID_HOME}/tools
 export PATH=${PATH}:${ANDROID_HOME}/platform-tools
 
+# Git Autocomplete
+[ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion 
+
 # Git Aliases
 alias gp='git push'
 alias gst='git status -sb'
