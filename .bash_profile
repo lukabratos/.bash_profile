@@ -30,3 +30,12 @@ gch () { git checkout "$1"; }
 
 # iOS
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData'
+
+# History Search
+bind '"\e[A": history-search-backward'
+bind '"\e[B": history-search-forward'
+bind '"\e[C": forward-char'
+bind '"\e[D": backward-char'
+
+export HISTSIZE=10000000
+export HISTFILESIZE=10000000000
