@@ -12,11 +12,6 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # Golang
 export GOPATH=$HOME/Developer/go
 
-# React Native Android
-export ANDROID_HOME=${HOME}/Library/Android/sdk
-export PATH=${PATH}:${ANDROID_HOME}/tools
-export PATH=${PATH}:${ANDROID_HOME}/platform-tools
-
 # Git Autocomplete
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion 
 
