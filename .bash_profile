@@ -56,3 +56,8 @@ openx(){
     fi
   fi
 }
+
+# IP
+# https://github.com/lukabratos/fish-dotfiles/commit/3ded2327c3a1fb3f2ec7620237b2570473ab9ff0
+alias ipe='curl ipecho.net/plain; echo'
+alias ipi='ipconfig getifaddr en0'
