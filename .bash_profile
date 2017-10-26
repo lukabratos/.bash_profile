@@ -24,6 +24,7 @@ alias gd='git diff --color | diff-so-fancy'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
 gbd () { git branch -D "$1"; }
 gch () { git checkout "$1"; }
+rmtag() { git tag -d "$1"; git push origin :refs/tags/"$1"; };
 
 # iOS
 alias rmdd='rm -rf ~/Library/Developer/Xcode/DerivedData'
