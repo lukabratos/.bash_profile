@@ -11,6 +11,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Golang
 export GOPATH=$HOME/Developer/go
+export PATH=$PATH:$GOPATH/bin
 
 # Git Autocomplete
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion 
