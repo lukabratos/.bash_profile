@@ -66,3 +66,7 @@ alias ipi='ipconfig getifaddr en0'
 
 # OPAM configuration
 . /Users/luka/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
+
+# yarn
+export PATH="/usr/local/opt/icu4c/bin:$PATH"
+export PATH="/usr/local/opt/icu4c/sbin:$PATH"
