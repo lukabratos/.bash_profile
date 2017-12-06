@@ -23,6 +23,7 @@ alias gb='git branch'
 alias gc='git commit -a'
 alias gd='git diff --color | diff-so-fancy'
 alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gh="open \`git remote -v | grep git@github.com | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/:/\//' -e 's/git@/http:\/\//'\`"
 gbd () { git branch -D "$1"; }
 gch () { git checkout "$1"; }
 rmtag() { git tag -d "$1"; git push origin :refs/tags/"$1"; };
