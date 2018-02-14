@@ -71,3 +71,5 @@ alias ipi='ipconfig getifaddr en0'
 # yarn
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
+# Todolist
+alias t=todolist
