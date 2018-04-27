@@ -60,14 +60,6 @@ openx(){
   fi
 }
 
-# IP
-# https://github.com/lukabratos/fish-dotfiles/commit/3ded2327c3a1fb3f2ec7620237b2570473ab9ff0
-alias ipe='curl ipecho.net/plain; echo'
-alias ipi='ipconfig getifaddr en0'
-
-# OPAM configuration
-. /Users/luka/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
-
 # yarn
 export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
