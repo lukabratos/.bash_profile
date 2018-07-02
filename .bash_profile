@@ -41,23 +41,8 @@ export HISTSIZE=10000000
 export HISTFILESIZE=10000000000
 
 # Xcode
-# https://github.com/KrauseFx/dotfiles/blob/master/.zshrc#L61
 openx(){ 
-  if test -n "$(find . -maxdepth 1 -name '*.xcworkspace' -print -quit)"
-  then
-    echo "Opening workspace"
-    open *.xcworkspace
-    return
-  else
-    if test -n "$(find . -maxdepth 1 -name '*.xcodeproj' -print -quit)"
-    then
-      echo "Opening project"
-      open *.xcodeproj
-      return  
-    else
-      echo "Nothing found"
-    fi
-  fi
+  xed .
 }
 
 # yarn
