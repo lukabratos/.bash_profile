@@ -18,6 +18,7 @@ export PATH=$PATH:$GOPATH/bin
 
 # Git Aliases
 alias gp='git push'
+alias gpm='git push origin master'
 alias gst='git status -sb'
 alias gb='git branch'
 alias gc='git commit -a'
