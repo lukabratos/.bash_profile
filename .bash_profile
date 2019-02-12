@@ -54,3 +54,6 @@ export PATH="/usr/local/opt/icu4c/bin:$PATH"
 export PATH="/usr/local/opt/icu4c/sbin:$PATH"
 
 export PATH="$HOME/.cargo/bin:$PATH"
+
+# heroku autocomplete setup
+HEROKU_AC_BASH_SETUP_PATH=/Users/luka/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
