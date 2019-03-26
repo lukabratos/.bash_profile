@@ -1,12 +1,6 @@
 # Prompt Settings
 PS1='\[\033[0;32m\]\[\033[0m\033[0;32m\]\u\[\033[0;36m\] @ \w\[\033[0;32m\]\n$(git branch 2>/dev/null | grep "^*" | colrm 1 2)\[\033[0;32m\]└─\[\033[0m\033[0;32m\] \$\[\033[0m\033[0;32m\]\[\033[0m\] '
 
-# Set the iTerm tab title to the current directory.
-# Taken from: https://gist.github.com/phette23/5270658
-if [ $ITERM_SESSION_ID ]; then
-  export PROMPT_COMMAND='echo -ne "\033];${PWD##*/}\007"; ':"$PROMPT_COMMAND";
-fi
-
 alias ls="ls -Gp"
 
 # rbenv
